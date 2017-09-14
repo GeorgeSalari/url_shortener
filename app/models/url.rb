@@ -1,6 +1,5 @@
 class Url < ApplicationRecord
   validates :long_url, presence: true
-  before_save :shorten
   before_validation :check_long_url
   validates :long_url, uniqueness: true, format: {with: /(\w+\.)+\w{2,}/, message: "Is not a valid url"}
 

@@ -1,0 +1,10 @@
+<%= form_for @url do |f| %>
+  <p>
+    <%= f.label "Type your URL here:" %><br>
+    <%= f.text_field :long_url %>
+  </p>
+
+  <p>
+    <%= f.submit "Shorten URL!" %>
+  </p>
+<% end %>
