@@ -1,0 +1,13 @@
+<table>
+<tr>
+<th>Original URL</th>
+<th>Shortened URL</th>
+</tr>
+
+<%  @urls.each do |url| %>
+    <tr>
+    <td> <a href = <%= url.long_url %> ><%= url.long_url %></a></td>
+    <td> <a href = <%= url.short_url %> ><%= url.short_url %></a> </td>
+    </tr>
+<% end %>
+</table>
