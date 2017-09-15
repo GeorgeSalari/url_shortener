@@ -9,6 +9,7 @@
     <td> <a href = <%= url.long_url %> ><%= url.long_url %></a></td>
     <td> <a href = <%= url.short_url %> ><%= url.short_url %></a> </td>
     <td> <%= link_to 'Show', url_path(url) %> </td>
+    <td><%= link_to 'Delete', url_path(url), method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
 <% end %>
 </table>
